@@ -1,24 +1,49 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Button } from 'react-bootstrap';
 import './App.css';
 
+
+const title = 'UPick';
+const user1 = {
+  firstName: 'Chris',
+  lastName: 'Chan'
+}
+const user2 = {
+  firstName: 'Erin',
+  lastName: 'Harding'
+}
+const user3 = {
+  firstName: 'Nandini',
+  lastName: 'Bulusu'
+}
+const user4 = {
+  firstName: 'Braeden',
+  lastName: 'Jury'
+}
+
 class App extends Component {
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <h1 className="title">
+            <strong>{title}</strong>
+          </h1>
+          <div className="App-center">
+         <Button bsClass="new-list-btn" bsSize="large" block><strong> New List </strong> </Button>
+         </div>
+         <div className = "App-center" >
+         <p>
+         - My Picks -
+         </p>
+         <div>
+         <Button bsClass="list-btn" bsSize="large" block><strong> {user1.firstName} & {user2.firstName} </strong> </Button>
+         </div>
+         <div>
+         <Button bsClass="list-btn" bsSize="large" block><strong> {user3.firstName} & {user4.firstName} </strong> </Button>
+         </div>
+         </div>
         </header>
       </div>
     );
