@@ -6,29 +6,32 @@
   import { YourCategories } from './YourPicks.js';
 
   export const title = 'UPick';
-  export const user1 = {
+const user1 = {
     firstName: 'Chris',
     lastName: 'Chan'
   }
-  export const user2 = {
+const user2 = {
     firstName: 'Erin',
     lastName: 'Harding'
   }
-  export const user3 = {
+const user3 = {
     firstName: 'Nandini',
     lastName: 'Bulusu'
   }
-  export const user4 = {
+const user4 = {
     firstName: 'Braeden',
     lastName: 'Jury'
   }
 
+export const users = {user1, user2, user3, user4};
+
+
   class MainPage extends Component {
     pickingList() {
-      window.location.href = "/PickingList";
+      window.location = "/PickingList";
     }
     yourPicks() {
-      window.location.href = "/YourCategories";
+      window.location = "/YourCategories";
     }
      render() {
 
