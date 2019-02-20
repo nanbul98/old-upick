@@ -5,6 +5,10 @@
   "dependencies": {
     "ajv": "^6.5.5",
     "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.14",
+    "morgan": "^1.9.1",
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.1",
